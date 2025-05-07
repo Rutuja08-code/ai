@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Website</title>
+
+  <!-- jQuery Mobile CDN  -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+  
+
+  <style>
+    body {
+      background-color: #e0ffff;
+    }
+    h1 {
+      color: green;
+    }
+    .content-text {
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header"><h1>Home</h1></div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" class="ui-btn-active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content" class="content-text">
+    <h2>Welcome!</h2>
+    <p>This is the Home page of our jQuery Mobile site.</p>
+  </div>
+
+  <div data-role="footer"><h4>© 2025 My Site</h4></div>
+</div>
+
+
+<!-- About Page -->
+<div data-role="page" id="about">
+  <div data-role="header"><h1>About</h1></div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about" class="ui-btn-active">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content" class="content-text">
+    <h2>About Us</h2>
+    <p>We build simple and mobile-friendly websites.</p>
+  </div>
+
+  <div data-role="footer"><h4>Email: info@example.com</h4></div>
+</div>
+
+<!-- Services Page -->
+<div data-role="page" id="services">
+  <div data-role="header"><h1>Services</h1></div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services" class="ui-btn-active">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content" class="content-text">
+    <h2>Our Services</h2>
+    <ul data-role="listview">
+      <li>Website Development</li>
+      <li>Mobile App Design</li>
+      <li>Data Analytics</li>
+    </ul>
+  </div>
+
+  <div data-role="footer"><h4>We deliver quality work!</h4></div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+  <div data-role="header"><h1>Contact</h1></div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content" class="content-text">
+    <h2>Contact Us</h2>
+    <form onsubmit="showMessage();">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+      
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+      
+        <input type="submit" value="Send">
+      </form>
+      
+      <script>
+        function showMessage() {
+          alert("Message sent successfully!");
+        }
+      </script>
+      
+  </div>
+
+  <div data-role="footer"><h4>Thank you for visiting!</h4></div>
+</div>
+
+</body>
+</html>
